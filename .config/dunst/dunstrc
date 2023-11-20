@@ -1,0 +1,20 @@
+[global]
+offset = 10x10
+gap_size = 5
+frame_width = 1
+corner_radius = 5
+frame_color = "#cba6f7ff"
+separator_color = frame
+
+[urgency_low]
+background = "#1e222add"
+foreground = "#cba6f7ff"
+
+[urgency_normal]
+background = "#1e222a"
+foreground = "#cba6f7ff"
+
+[urgency_critical]
+background = "#1e222a"
+foreground = "#cba6f7ff"
+frame_color = "#e06c75ff"
