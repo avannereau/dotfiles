@@ -1,9 +1,8 @@
 {
     "layer": "top",
-    "position": "bottom",
-    "height": 37,
+    "position": "top",
+    "height": 40,
     "modules-left": [
-        "custom/launcher",
         "hyprland/workspaces",
         "custom/media"
     ],
@@ -42,11 +41,15 @@
     "backlight": {
         "format": "{icon} {percent}%",
         "format-icons": [
+            "󰃚 ",
             "󰃛 ",
+            "󰃜 ",
+            "󰃝 ",
+            "󰃞 ",
+            "󰃟 ",
             "󰃠 "
         ],
-        "on-scroll-up": "light -U 1",
-        "on-scroll-down": "light -A 1",
+        "reverse-scrolling": true,
         "tooltip": false
     },
     "battery": {
@@ -58,6 +61,7 @@
         "tooltip-format": "{timeTo}",
         "format-charging": "{capacity}% {icon} ",
         "format-icons": [
+            "",
             "",
             "",
             "",
@@ -67,21 +71,15 @@
     "network": {
         "format-wifi": "󰖩 ",
         "format-ethernet": "󰈁 ",
-        "format-disconnected": " ",
+        "format-disconnected": "󰈂 ",
         "tooltip-format": "{essid}"
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
-        "format-bluetooth": "{icon} {volume}%",
-        "format-bluetooth-muted": "   {volume}%",
         "format-muted": " ",
         "format-icons": {
             "headphone": " ",
-            "hands-free": " ",
             "headset": " ",
-            "phone": " ",
-            "portable": " ",
-            "car": " ",
             "default": [
                 " ",
                 " ",
@@ -96,18 +94,11 @@
         "format": "{icon} {}",
         "return-type": "json",
         "max-length": 40,
-        "escape": true,
-        "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"alt\": \"{{playerName}}\", \"class\": \"{{status}}\"}' -F",
+        "exec": "playerctl -a metadata --format '{\"text\": \"{{markup_escape(artist)}} - {{markup_escape(title)}}\", \"alt\": \"{{playerName}}\", \"class\": \"{{status}}\"}' -F",
         "on-click": "playerctl play-pause",
         "format-icons": {
             "spotify": " ",
             "default": " "
         }
-    },
-    "custom/launcher": {
-        "format": " ",
-        "on-click": "rofi -show drun -show-icons",
-        "escape": true,
-        "tooltip": false
     }
 }
