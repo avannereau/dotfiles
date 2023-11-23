@@ -1,17 +1,1 @@
-.cache/
-.config/Code - OSS/
-.config/discord/
-.config/Electron/
-.config/light/
-.config/pulse/
-.config/spotify/
-.local/
-.mozilla/
-.oh-my-zsh/
-.pki/
-.vscode-oss/
-Downloads
-.bash_history
-.zcompdump-laptop-5.9
-.zcompdump-laptop-5.9.zwc
-.zsh_history
+*

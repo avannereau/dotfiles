@@ -1,3 +1,5 @@
+@import "mocha.css";
+
 * {
   border: none;
   font-family: Iosevka Nerd Font, sans-serif;
@@ -5,11 +7,11 @@
 }
 
 window#waybar {
-  background-color: #1E1E2E;
-  color: #CBA6F7;
+  background-color: @base;
+  color: @mauve;
   transition-property: background-color;
   transition-duration: .5s;
-  opacity: 0.8;
+  opacity: 0.9;
   border-radius: 90px;
 }
 
@@ -20,79 +22,69 @@ window#waybar.hidden {
 #workspaces,
 #custom-media,
 #clock,
-#pulseaudio,
+#wireplumber,
 #backlight,
 #battery,
 #network,
 #tray {
-  background-color: #1E1E2E;
   padding: 0px 10px;
-  margin: 5px 5px 5px 5px;
-  border: 1px solid rgba(0, 0, 0, 0);
+  margin: 5px;
   border-radius: 90px;
-  background-clip: padding-box;
 }
 
 #workspaces button {
-  padding: 0 5px;
-  min-width: 20px;
-  color: #CBA6F7;
+  padding: 0px 5px;
+  color: @mauve;
 }
 
 #workspaces button:hover {
-  background-color: #CBA6F7;
-}
-
-#workspaces button.focused {
-  color: #6C7086;
+  box-shadow: none;
+  text-shadow: none;
+  background: @crust;
+  transition: none;
 }
 
 #workspaces button.urgent {
-  color: #F38BA8;
+  color: @red;
 }
 
 #custom-media {
-  background-color: #CBA6F7;
-  color: #1E1E2E;
+  background-color: @crust;
 }
 
-#clock {
-  color: #CBA6F7;
+#wireplumber {
+  color: @yellow;
 }
 
-#pulseaudio {
-  color: #CBA6F7;
-}
-
-#pulseaudio.muted {
-  background-color: #F38BA8;
-  color: #1E1E2E;
+#wireplumber.muted {
+  background-color: @red;
+  color: @base;
 }
 
 #backlight {
-  color: #89B4FA;
+  color: @blue;
 }
 
 #battery {
-  color: #A6E3A1;
+  color: @green;
 }
 
 #battery.charging,
 #battery.plugged {
-  background-color: #A6E3A1;
-  color: #1E1E2E;
+  background-color: @green;
+  color: @base;
 }
 
 @keyframes blink {
   to {
-    background-color: #1E1E2E;
-    color: #F38BA8;
+    background-color: @base;
+    color: @red;
   }
 }
 
 #battery.critical:not(.charging) {
-  background-color: #F38BA8;
-  color: #1E1E2E;
+  background-color: @red;
+  color: @base;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -100,11 +92,7 @@ window#waybar.hidden {
   animation-direction: alternate;
 }
 
-#network {
-  color: #CBA6F7
-}
-
 #network.disconnected {
-  background-color: #F38BA8;
-  color: #1E1E2E;
+  background-color: @red;
+  color: @base;
 }
