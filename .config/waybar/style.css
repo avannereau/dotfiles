@@ -1,14 +1,11 @@
-@import "mocha.css";
-
 * {
   border: none;
-  font-family: Iosevka Nerd Font, sans-serif;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 window#waybar {
-  background-color: @base;
-  color: @mauve;
+  background-color: #1E1E2E;
+  color: #CBA6F7;
   transition-property: background-color;
   transition-duration: .5s;
   opacity: 0.9;
@@ -28,63 +25,57 @@ window#waybar.hidden {
 #network,
 #tray {
   padding: 0px 10px;
-  margin: 5px;
+  margin: 5px 0px;
   border-radius: 90px;
 }
 
 #workspaces button {
   padding: 0px 5px;
-  color: @mauve;
+  color: #CBA6F7;
 }
 
 #workspaces button:hover {
   box-shadow: none;
   text-shadow: none;
-  background: @crust;
+  background: #11111B;
   transition: none;
 }
 
 #workspaces button.urgent {
-  color: @red;
+  color: #F38BA8;
 }
 
 #custom-media {
-  background-color: @crust;
+  background-color: #11111B;
 }
 
 #wireplumber {
-  color: @yellow;
+  color: #F9E2AF;
 }
 
 #wireplumber.muted {
-  background-color: @red;
-  color: @base;
+  background-color: #F38BA8;
+  color: #1E1E2E;
 }
 
 #backlight {
-  color: @blue;
+  color: #89B4FA;
 }
 
 #battery {
-  color: @green;
-}
-
-#battery.charging,
-#battery.plugged {
-  background-color: @green;
-  color: @base;
+  color: #A6E3A1;
 }
 
 @keyframes blink {
   to {
-    background-color: @base;
-    color: @red;
+    background-color: #1E1E2E;
+    color: #F38BA8;
   }
 }
 
 #battery.critical:not(.charging) {
-  background-color: @red;
-  color: @base;
+  background-color: #F38BA8;
+  color: #1E1E2E;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -93,6 +84,6 @@ window#waybar.hidden {
 }
 
 #network.disconnected {
-  background-color: @red;
-  color: @base;
+  background-color: #F38BA8;
+  color: #1E1E2E;
 }

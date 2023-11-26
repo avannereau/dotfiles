@@ -32,13 +32,13 @@
     "backlight": {
         "format": "{icon} {percent}%",
         "format-icons": [
-            "󰃚",
-            "󰃛",
-            "󰃜",
-            "󰃝",
-            "󰃞",
-            "󰃟",
-            "󰃠"
+            "󰃚 ",
+            "󰃛 ",
+            "󰃜 ",
+            "󰃝 ",
+            "󰃞 ",
+            "󰃟 ",
+            "󰃠 "
         ],
         "tooltip": false
     },
@@ -48,13 +48,14 @@
             "critical": 15
         },
         "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}%  ",
         "tooltip-format": "{timeTo}",
         "format-icons": [
-            " ",
-            " ",
-            " ",
-            " ",
-            " "
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
         ]
     },
     "network": {
@@ -75,7 +76,7 @@
         "tooltip": false
     },
     "custom/media": {
-        "format": "{icon} {}",
+        "format": "{icon}  {}",
         "return-type": "json",
         "max-length": 40,
         "exec": "playerctl -a metadata --format '{\"text\": \"{{markup_escape(artist)}} - {{markup_escape(title)}}\", \"alt\": \"{{playerName}}\", \"class\": \"{{status}}\"}' -F",

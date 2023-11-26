@@ -1,26 +1,34 @@
-# Dotfiles
+# .files
 
-Arch Linux based dotfiles
+Made for Arch Linux
+
+Color scheme: **catppuccin-mocha**
 
 ## Dependencies
 * hyprland
 * hyprpaper
-* pipewire
-* wireplumber
-* light
 * waybar
 * fuzzel
 * dunst
 * foot
+---
+* pipewire
+* wireplumber
+* pipewire-pulse (Optional)
+* light
+---
 * zsh
-* oh My Zsh
+* oh my zsh
+---
+* noto-fonts
+* noto-fonts-emoji
+* noto-fonts-cjk
+* ttf-noto-nerd
+---
 * firefox
 * discord
 * spotify
 * code
-* openssh
-* polkit-kde-agent
-* noto-fonts
-* noto-fonts-emoji
-* noto-fonts-cjk
-* ttf-iosevka-nerd
+
+## Extra
+* [Grub theme](https://github.com/catppuccin/grub)
