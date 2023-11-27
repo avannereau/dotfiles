@@ -15,7 +15,7 @@ Color scheme: **catppuccin-mocha**
 * pipewire
 * wireplumber
 * pipewire-pulse (Optional)
-* light
+* brightnessctl
 ---
 * zsh
 * oh my zsh
