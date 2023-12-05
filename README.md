@@ -14,7 +14,7 @@ Color scheme: **catppuccin-mocha**
 ---
 * pipewire
 * wireplumber
-* pipewire-pulse (Optional)
+* pipewire-pulse
 * brightnessctl
 ---
 * zsh
@@ -26,9 +26,9 @@ Color scheme: **catppuccin-mocha**
 * ttf-noto-nerd
 ---
 * firefox
-* discord
-* spotify
-* code
+* discordᵃᵘʳ
+* spotifyᵃᵘʳ
+* visual-studio-code-binᵃᵘʳ
 
 ## Extra
 * [Grub theme](https://github.com/catppuccin/grub)
