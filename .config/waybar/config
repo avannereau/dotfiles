@@ -1,89 +1,108 @@
 {
     "layer": "top",
     "modules-left": [
-        "hyprland/workspaces",
-        "custom/media"
+        "group/left"
     ],
     "modules-center": [
-        "clock"
+        "group/center"
     ],
     "modules-right": [
-        "tray",
-        "wireplumber",
-        "backlight",
-        "battery",
-        "network"
+        "group/right"
     ],
+    "group/left": {
+        "orientation": "inherit",
+        "modules": [
+            "hyprland/workspaces"
+        ]
+    },
+    "group/center": {
+        "orientation": "inherit",
+        "modules": [
+            "custom/spotify"
+        ]
+    },
+    "group/right": {
+        "orientation": "inherit",
+        "modules": [
+            "battery",
+            "wireplumber",
+            "backlight",
+            "clock",
+            "network"
+        ]
+    },
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
-            "1": " ",
-            "2": " ",
-            "3": "󰙯 ",
-            "4": " ",
-            "urgent": " ",
-            "default": " "
+            "active": "<span foreground='#CDD6F4'></span>",
+            "urgent": "<span foreground='#F38BA8'></span>",
+            "default": "<span foreground='#CDD6F4'></span>"
+        },
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
         }
     },
-    "clock": {
-        "format": "{:%H:%M}  ",
-        "format-alt": "{:%A, %B %d, %Y}  "
-    },
-    "backlight": {
-        "format": "{icon} {percent}%",
-        "format-icons": [
-            "󰃚 ",
-            "󰃛 ",
-            "󰃜 ",
-            "󰃝 ",
-            "󰃞 ",
-            "󰃟 ",
-            "󰃠 "
-        ],
-        "tooltip": false
+    "custom/spotify": {
+        "format": "<span foreground='#1DB954'></span>   {}",
+        "max-length": 40,
+        "return-type": "json",
+        "exec-if": "pgrep spotify",
+        "exec": "playerctl -p spotify metadata -f '{\"text\": \"{{markup_escape(artist)}} - {{markup_escape(title)}}\", \"class\": \"{{status}}\"}' -F",
+        "on-click": "playerctl -p spotify play-pause"
     },
     "battery": {
         "states": {
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}%  ",
-        "tooltip-format": "{timeTo}",
+        "format": "<span foreground='#A6E3A1'>{icon}</span>    {capacity}%",
+        "format-critical": "<span foreground='#F38BA8'>{icon}</span>    {capacity}%",
+        "format-charging": "<span foreground='#A6E3A1'></span>    {capacity}%",
+        "tooltip-format": "{time}",
         "format-icons": [
-            " ",
-            " ",
-            " ",
-            " ",
-            " "
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     },
-    "network": {
-        "format-wifi": "󰖩 ",
-        "format-ethernet": "󰈁 ",
-        "format-disconnected": "󰈂 ",
-        "tooltip-format": "{essid}"
-    },
     "wireplumber": {
-        "format": "{icon} {volume}%",
-        "format-muted": " ",
+        "format": "<span foreground='#F9E2AF'>{icon}</span>   {volume}%",
+        "format-muted": "<span foreground='#F38BA8'></span> ",
         "format-icons": [
-            " ",
-            " ",
-            " "
+            "",
+            "",
+            ""
         ],
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
         "tooltip": false
     },
-    "custom/media": {
-        "format": "{icon}  {}",
-        "return-type": "json",
-        "max-length": 40,
-        "exec": "playerctl -a metadata --format '{\"text\": \"{{markup_escape(artist)}} - {{markup_escape(title)}}\", \"alt\": \"{{playerName}}\", \"class\": \"{{status}}\"}' -F",
-        "on-click": "playerctl play-pause",
-        "format-icons": {
-            "spotify": " ",
-            "default": " "
-        }
+    "backlight": {
+        "format": "<span foreground='#89B4FA'>{icon}</span>   {percent}%",
+        "format-icons": [
+            "󰃚",
+            "󰃛",
+            "󰃜",
+            "󰃝",
+            "󰃞",
+            "󰃟",
+            "󰃠"
+        ],
+        "tooltip": false
+    },
+    "clock": {
+        "format": "<span foreground='#F5C2E7'></span>   {:%H:%M}",
+        "tooltip-format": "{:%d/%m/%y}"
+    },
+    "network": {
+        "format-wifi": "<span foreground='#CBA6F7'>󰖩</span> ",
+        "format-ethernet": "<span foreground='#CBA6F7'>󰈁</span> ",
+        "format-disconnected": "<span foreground='#F38BA8'>󰈂</span> ",
+        "tooltip-format": "{essid}"
     }
 }

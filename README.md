@@ -14,7 +14,7 @@ Color scheme: **catppuccin-mocha**
 ---
 * pipewire
 * wireplumber
-* pipewire-pulse
+* pipewire-alsa
 * brightnessctl
 ---
 * zsh
@@ -26,7 +26,7 @@ Color scheme: **catppuccin-mocha**
 * ttf-noto-nerd
 ---
 * firefox
-* discordᵃᵘʳ
+* discord-electronᵃᵘʳ
 * spotifyᵃᵘʳ
 * visual-studio-code-binᵃᵘʳ
 

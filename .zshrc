@@ -7,3 +7,5 @@ ZSH_THEME="agnoster"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
+unsetopt PROMPT_SP
