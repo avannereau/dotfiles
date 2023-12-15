@@ -21,12 +21,12 @@ tooltip {
 #center,
 #right {
   margin: 5px 5px 0px 5px;
+  padding: 0px 5px;
   border-radius: 5px;
   background-color: #1E1E2E;
   opacity: 0.9;
 }
 
-#workspaces,
 #workspaces button {
   padding: 0px 5px;
 }
@@ -38,11 +38,13 @@ tooltip {
   transition: none;
 }
 
-#custom-spotify,
-#battery,
+#custom-spotify {
+  padding: 0px 5px;
+}
+
 #wireplumber,
 #backlight,
-#clock,
-#network {
+#battery,
+#clock {
   padding: 0px 10px;
 }
