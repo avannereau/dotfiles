@@ -12,10 +12,13 @@ Color scheme: **catppuccin-mocha**
 * dunst
 * foot
 ---
+* xdg-desktop-portal-wlr
 * pipewire
 * wireplumber
 * pipewire-alsa
 * brightnessctl
+* grim
+* slurp
 ---
 * zsh
 * oh my zsh
@@ -23,7 +26,7 @@ Color scheme: **catppuccin-mocha**
 * noto-fonts
 * noto-fonts-emoji
 * noto-fonts-cjk
-* ttf-noto-nerd
+* ttf-nerd-fonts-symbols
 ---
 * firefox
 * discord-electronᵃᵘʳ
