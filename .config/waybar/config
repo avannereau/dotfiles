@@ -1,26 +1,14 @@
 {
     "layer": "top",
     "modules-left": [
-        "group/left"
+        "hyprland/workspaces"
     ],
     "modules-center": [
-        "group/center"
+        "custom/spotify"
     ],
     "modules-right": [
         "group/right"
     ],
-    "group/left": {
-        "orientation": "inherit",
-        "modules": [
-            "hyprland/workspaces"
-        ]
-    },
-    "group/center": {
-        "orientation": "inherit",
-        "modules": [
-            "custom/spotify"
-        ]
-    },
     "group/right": {
         "orientation": "inherit",
         "modules": [
