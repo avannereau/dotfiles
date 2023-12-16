@@ -13,6 +13,8 @@ Color scheme: **catppuccin-mocha**
 * foot
 ---
 * xdg-desktop-portal-wlr
+* xdg-desktop-portal-gtk
+* polkit-gnome
 * pipewire
 * wireplumber
 * pipewire-alsa
@@ -29,7 +31,6 @@ Color scheme: **catppuccin-mocha**
 * ttf-nerd-fonts-symbols
 ---
 * firefox
-* discord-electronᵃᵘʳ
 * spotifyᵃᵘʳ
 * visual-studio-code-binᵃᵘʳ
 
