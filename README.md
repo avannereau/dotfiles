@@ -15,10 +15,12 @@ Color scheme: **catppuccin-mocha**
 * xdg-desktop-portal-wlr
 * xdg-desktop-portal-gtk
 * polkit-gnome
+---
 * pipewire
 * wireplumber
 * pipewire-alsa
 * brightnessctl
+* gammastep
 * grim
 * slurp
 ---
