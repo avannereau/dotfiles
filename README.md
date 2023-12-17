@@ -21,6 +21,7 @@ Color scheme: **catppuccin-mocha**
 * pipewire-alsa
 * brightnessctl
 * gammastep
+* swayidle
 * grim
 * slurp
 ---
