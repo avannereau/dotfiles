@@ -1,6 +1,6 @@
 # .files
 
-Made for Arch Linux
+Made for Arch Linux.
 
 Color scheme: **catppuccin-mocha**
 
@@ -20,7 +20,7 @@ Color scheme: **catppuccin-mocha**
 * wireplumber
 * pipewire-alsa
 * brightnessctl
-* gammastep
+* wlsunsetᵃᵘʳ
 * swayidle
 * grim
 * slurp
