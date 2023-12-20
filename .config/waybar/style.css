@@ -9,7 +9,6 @@ tooltip {
   border-radius: 5px;
   background-color: #1E1E2E;
   color: #CDD6F4;
-  opacity: 0.9;
 }
 
 #waybar {
@@ -24,7 +23,6 @@ tooltip {
   padding: 0px 5px;
   border-radius: 5px;
   background-color: #1E1E2E;
-  opacity: 0.9;
 }
 
 #workspaces button {
