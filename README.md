@@ -35,7 +35,7 @@ Color scheme: **catppuccin-mocha**
 ---
 * firefox
 * spotifyᵃᵘʳ
-* visual-studio-code-binᵃᵘʳ
 
 ## Extra
 * [Grub theme](https://github.com/catppuccin/grub)
+* [Silent boot](https://wiki.archlinux.org/title/silent_boot)
