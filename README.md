@@ -18,7 +18,6 @@ Color scheme: **catppuccin-mocha**
 ---
 * pipewire
 * wireplumber
-* pipewire-alsa
 * brightnessctl
 * wlsunsetᵃᵘʳ
 * swayidle
@@ -35,6 +34,9 @@ Color scheme: **catppuccin-mocha**
 ---
 * firefox
 * spotifyᵃᵘʳ
+
+## Notes
+* **wlsunset** lon/lat config is in ~/.config/hypr/startup.conf
 
 ## Extra
 * [Grub theme](https://github.com/catppuccin/grub)
