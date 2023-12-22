@@ -6,15 +6,15 @@
         "custom/spotify"
     ],
     "modules-right": [
-        "group/right"
+        "group/soundlight",
+        "battery",
+        "clock"
     ],
-    "group/right": {
+    "group/soundlight": {
         "orientation": "inherit",
         "modules": [
             "wireplumber",
-            "backlight",
-            "battery",
-            "clock"
+            "backlight"
         ]
     },
     "hyprland/workspaces": {
@@ -25,11 +25,7 @@
             "default": "<span foreground='#CDD6F4'></span>"
         },
         "persistent-workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": []
+            "*": 5
         }
     },
     "custom/spotify": {
@@ -48,6 +44,7 @@
             "󰖀",
             "󰕾"
         ],
+        "reverse-scrolling": true,
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
         "tooltip": false
     },
@@ -62,6 +59,7 @@
             "󰃟",
             "󰃠"
         ],
+        "reverse-scrolling": true,
         "tooltip": false
     },
     "battery": {

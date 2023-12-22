@@ -11,14 +11,16 @@ tooltip {
   color: #CDD6F4;
 }
 
-#waybar {
+window#waybar {
   background-color: rgba(0, 0, 0, 0);
   color: #CDD6F4;
 }
 
 #workspaces,
 #custom-spotify,
-#right {
+#soundlight,
+#battery,
+#clock {
   margin: 5px 5px 0px 5px;
   padding: 0px 5px;
   border-radius: 5px;
@@ -36,10 +38,7 @@ tooltip {
   transition: none;
 }
 
-#custom-spotify {
-  padding: 0px 10px;
-}
-
+#custom-spotify,
 #wireplumber,
 #backlight,
 #battery,
