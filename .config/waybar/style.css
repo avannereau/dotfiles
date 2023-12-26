@@ -2,15 +2,6 @@
   border: none;
 }
 
-tooltip {
-  border-style: solid;
-  border-color: #89B4FA;
-  border-width: 1px;
-  border-radius: 5px;
-  background-color: #1E1E2E;
-  color: #CDD6F4;
-}
-
 window#waybar {
   background-color: rgba(0, 0, 0, 0);
   color: #CDD6F4;

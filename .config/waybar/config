@@ -70,7 +70,6 @@
         "format": "<span foreground='#A6E3A1'>{icon}</span>  {capacity}%",
         "format-critical": "<span foreground='#F38BA8'>󰂃</span>  {capacity}%",
         "format-charging": "<span foreground='#A6E3A1'>󰂄</span>  {capacity}%",
-        "tooltip-format": "{time}",
         "format-icons": [
             "󰁺",
             "󰁻",
@@ -82,10 +81,10 @@
             "󰂁",
             "󰂂",
             "󰁹"
-        ]
+        ],
+        "tooltip": false
     },
     "clock": {
-        "format": "<span foreground='#F5C2E7'>󱑆</span>  {:%H:%M}",
-        "tooltip-format": "{:%A %d %B %Y}"
+        "format": "<span foreground='#F5C2E7'>󱑆</span>  {:%H:%M}"
     }
 }

@@ -39,5 +39,4 @@ Color scheme: **catppuccin-mocha**
 * **wlsunset** lon/lat config is in ~/.config/hypr/startup.conf
 
 ## Extra
-* [Grub theme](https://github.com/catppuccin/grub)
 * [Silent boot](https://wiki.archlinux.org/title/silent_boot)
