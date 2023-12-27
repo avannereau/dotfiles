@@ -1,21 +1,31 @@
 {
+    "margin-top": 5,
+    "margin-right": 5,
+    "margin-bottom": 0,
+    "margin-left": 5,
+    "spacing": 2,
     "modules-left": [
+        "custom/logo",
         "hyprland/workspaces"
     ],
     "modules-center": [
         "custom/spotify"
     ],
     "modules-right": [
-        "group/soundlight",
+        "group/wireplumberbacklight",
         "battery",
         "clock"
     ],
-    "group/soundlight": {
+    "group/wireplumberbacklight": {
         "orientation": "inherit",
         "modules": [
             "wireplumber",
             "backlight"
         ]
+    },
+    "custom/logo": {
+        "format": "󰣇",
+        "tooltip": false
     },
     "hyprland/workspaces": {
         "format": "{icon}",
