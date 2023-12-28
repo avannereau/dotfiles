@@ -9,7 +9,7 @@ Color scheme: **catppuccin-mocha**
 * hyprpaper
 * waybar
 * fuzzel
-* dunst
+* mako
 * foot
 ---
 * xdg-desktop-portal-wlr
@@ -39,4 +39,5 @@ Color scheme: **catppuccin-mocha**
 * **wlsunset** lon/lat config is in ~/.config/hypr/startup.conf
 
 ## Extra
+* [GTK Theme (Blue-Dark)](https://github.com/catppuccin/gtk)
 * [Silent boot](https://wiki.archlinux.org/title/silent_boot)
