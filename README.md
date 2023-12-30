@@ -16,8 +16,8 @@ Color scheme: **catppuccin-mocha**
 * xdg-desktop-portal-gtk
 * polkit-gnome
 ---
-* pipewire
 * wireplumber
+* pipewire-pulse
 * brightnessctl
 * wlsunsetᵃᵘʳ
 * swayidle
