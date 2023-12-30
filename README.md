@@ -4,7 +4,7 @@ Made for Arch Linux.
 
 Color scheme: **catppuccin-mocha**
 
-## Dependencies
+## Packages
 * hyprland
 * hyprpaper
 * waybar
@@ -16,8 +16,6 @@ Color scheme: **catppuccin-mocha**
 * xdg-desktop-portal-gtk
 * polkit-gnome
 ---
-* wireplumber
-* pipewire-pulse
 * brightnessctl
 * wlsunsetᵃᵘʳ
 * swayidle
@@ -38,6 +36,6 @@ Color scheme: **catppuccin-mocha**
 ## Notes
 * **wlsunset** lon/lat config is in ~/.config/hypr/startup.conf
 
-## Extra
+## Extras
 * [GTK Theme (Blue-Dark)](https://github.com/catppuccin/gtk)
 * [Silent boot](https://wiki.archlinux.org/title/silent_boot)
