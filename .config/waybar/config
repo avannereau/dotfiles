@@ -12,14 +12,14 @@
         "custom/spotify"
     ],
     "modules-right": [
-        "group/wireplumberbacklight",
+        "group/pulseaudiobacklight",
         "battery",
         "clock"
     ],
-    "group/wireplumberbacklight": {
+    "group/pulseaudiobacklight": {
         "orientation": "inherit",
         "modules": [
-            "wireplumber",
+            "pulseaudio",
             "backlight"
         ]
     },
@@ -46,7 +46,7 @@
         "exec": "playerctl -p spotify metadata -f '{\"text\": \"{{markup_escape(artist)}} - {{markup_escape(title)}}\", \"class\": \"{{status}}\"}' -F",
         "on-click": "playerctl -p spotify play-pause"
     },
-    "wireplumber": {
+    "pulseaudio": {
         "format": "<span foreground='#F9E2AF'>{icon}</span>  {volume}%",
         "format-muted": "<span foreground='#F38BA8'>󰖁</span>  {volume}%",
         "format-icons": [
@@ -55,7 +55,6 @@
             "󰕾"
         ],
         "reverse-scrolling": true,
-        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
         "tooltip": false
     },
     "backlight": {

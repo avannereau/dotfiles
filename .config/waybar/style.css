@@ -10,7 +10,7 @@ window#waybar {
 #custom-logo,
 #workspaces,
 #custom-spotify,
-#wireplumberbacklight,
+#pulseaudiobacklight,
 #battery,
 #clock {
   border-radius: 5px;
@@ -31,7 +31,7 @@ window#waybar {
 
 #custom-logo,
 #custom-spotify,
-#wireplumber,
+#pulseaudio,
 #backlight,
 #battery,
 #clock {
