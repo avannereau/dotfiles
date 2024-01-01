@@ -1,5 +1,6 @@
 anchor=bottom-right
 default-timeout=3000
+margin=15
 border-size=1
 
 background-color=#1E1E2E
