@@ -1,31 +1,24 @@
 {
-    "margin-top": 5,
-    "margin-right": 5,
-    "margin-bottom": 0,
-    "margin-left": 5,
-    "spacing": 2,
+    "spacing": 10,
     "modules-left": [
-        "custom/logo",
-        "hyprland/workspaces"
-    ],
-    "modules-center": [
-        "custom/spotify"
-    ],
-    "modules-right": [
-        "group/pulseaudiobacklight",
-        "battery",
+        "custom/power",
         "clock"
     ],
-    "group/pulseaudiobacklight": {
-        "orientation": "inherit",
-        "modules": [
-            "pulseaudio",
-            "backlight"
-        ]
-    },
-    "custom/logo": {
-        "format": "󰣇",
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "backlight",
+        "battery"
+    ],
+    "custom/power": {
+        "format": "󰐥",
+        "on-click": "~/.config/scripts/power-menu.sh",
         "tooltip": false
+    },
+    "clock": {
+        "format": "<span foreground='#F5C2E7'>󱑆</span>  {:%H:%M}"
     },
     "hyprland/workspaces": {
         "format": "{icon}",
@@ -37,14 +30,6 @@
         "persistent-workspaces": {
             "*": 5
         }
-    },
-    "custom/spotify": {
-        "format": "<span foreground='#1DB954'>󰓇</span>   {}",
-        "max-length": 40,
-        "return-type": "json",
-        "exec-if": "pgrep spotify",
-        "exec": "playerctl -p spotify metadata -f '{\"text\": \"{{markup_escape(artist)}} - {{markup_escape(title)}}\", \"class\": \"{{status}}\"}' -F",
-        "on-click": "playerctl -p spotify play-pause"
     },
     "pulseaudio": {
         "format": "<span foreground='#F9E2AF'>{icon}</span>  {volume}%",
@@ -92,8 +77,5 @@
             "󰁹"
         ],
         "tooltip": false
-    },
-    "clock": {
-        "format": "<span foreground='#F5C2E7'>󱑆</span>  {:%H:%M}"
     }
 }

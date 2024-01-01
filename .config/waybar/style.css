@@ -3,21 +3,16 @@
 }
 
 window#waybar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #1E1E2E;
   color: #CDD6F4;
 }
 
-#custom-logo,
-#workspaces,
-#custom-spotify,
-#pulseaudiobacklight,
-#battery,
-#clock {
-  border-radius: 5px;
-  background-color: #1E1E2E;
+#custom-power {
+  padding: 0px 10px;
+  background-color: #89B4FA;
+  color: #1E1E2E;
 }
 
-#workspaces,
 #workspaces button {
   padding: 0px 5px;
 }
@@ -29,11 +24,6 @@ window#waybar {
   transition: none;
 }
 
-#custom-logo,
-#custom-spotify,
-#pulseaudio,
-#backlight,
-#battery,
-#clock {
-  padding: 0px 10px;
+#battery {
+  padding-right: 10px;
 }
