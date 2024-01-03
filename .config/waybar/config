@@ -3,7 +3,8 @@
     "spacing": 10,
     "modules-left": [
         "custom/power",
-        "clock"
+        "clock#date",
+        "clock#time"
     ],
     "modules-center": [
         "hyprland/workspaces"
@@ -18,7 +19,10 @@
         "on-click": "~/.config/scripts/power-menu.sh",
         "tooltip": false
     },
-    "clock": {
+    "clock#date": {
+        "format": "<span foreground='#F5C2E7'>󰸗</span>  {:%a, %e %b}"
+    },
+    "clock#time": {
         "format": "<span foreground='#F5C2E7'>󱑆</span>  {:%H:%M}"
     },
     "hyprland/workspaces": {
