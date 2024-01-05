@@ -31,9 +31,6 @@
             "active": "<span foreground='#CDD6F4'></span>",
             "urgent": "<span foreground='#F38BA8'></span>",
             "default": "<span foreground='#CDD6F4'></span>"
-        },
-        "persistent-workspaces": {
-            "*": 5
         }
     },
     "pulseaudio": {
