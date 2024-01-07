@@ -45,7 +45,7 @@
         "tooltip": false
     },
     "backlight": {
-        "format": "<span foreground='#89B4FA'>{icon}</span>  {percent}%",
+        "format": "<span foreground='#CBA6F7'>{icon}</span>  {percent}%",
         "format-icons": [
             "󰃚",
             "󰃛",
