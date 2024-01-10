@@ -1,0 +1,27 @@
+general {
+    output_format = "i3bar"
+    colors = false
+    markup = "pango"
+}
+
+order += "battery 0"
+order += "volume master"
+order += "time"
+
+battery 0 {
+    format = "<span color='#A6E3A1'>%status</span> %percentage"
+    status_chr = "󰂄"
+    status_bat = "󰁾"
+    status_full = "󰁹"
+    integer_battery_capacity = true
+    last_full_capacity = true
+}
+
+volume master {
+    format = "<span color='#F9E2AF'>󰕾</span> %volume"
+    format_muted = "<span color='#F38BA8'>󰖁</span> %volume"
+}
+
+time {
+    format = "<span color='#F5C2E7'>󰸗</span> %a, %d %b <span color='#F5C2E7'></span> %H:%M"
+}

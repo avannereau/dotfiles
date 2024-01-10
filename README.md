@@ -5,15 +5,15 @@ Made for Arch Linux.
 Color scheme: **catppuccin-mocha**
 
 ## Packages
-* hyprland
-* hyprpaper
-* waybar
+* sway
+* swaybg
+* i3status
 * fuzzel
 * mako
 * foot
 ---
-* xdg-desktop-portal-wlr
 * xdg-desktop-portal-gtk
+* xdg-desktop-portal-wlr
 * polkit-gnome
 ---
 * brightnessctl
@@ -29,13 +29,6 @@ Color scheme: **catppuccin-mocha**
 * noto-fonts-emoji
 * noto-fonts-cjk
 * ttf-nerd-fonts-symbols
----
-* firefox
-* spotifyᵃᵘʳ
-
-## Notes
-* **wlsunset** lon/lat config is in ~/.config/hypr/startup.conf
 
 ## Extras
-* [GTK Theme (Blue-Dark)](https://github.com/catppuccin/gtk)
 * [Silent boot](https://wiki.archlinux.org/title/silent_boot)

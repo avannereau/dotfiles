@@ -1,0 +1,104 @@
+output * {
+    background ~/.config/wallpapers/main.jpg fill
+}
+
+output eDP-1 {
+    scale 1.5
+}
+
+input type:keyboard {
+    xkb_layout fr
+}
+
+input type:touchpad {
+    pointer_accel 0.2
+    scroll_factor 0.2
+
+    tap enabled
+    natural_scroll enabled
+}
+
+bar {
+    status_command i3status
+
+    position top
+    status_edge_padding 5
+    separator_symbol " | "
+
+    colors {
+        background #1E1E2E
+        statusline #CDD6F4
+        separator #89B4FA
+        focused_workspace #89B4FA #89B4FA #1E1E2E
+        active_workspace #1E1E2E 1E1E2E #CDD6F4
+        inactive_workspace #1E1E2E 1E1E2E #CDD6F4
+        urgent_workspace #F38BA8 #F38BA8 #1E1E2E
+    }
+}
+
+client.focused #00000000 #89B4FAFF #00000000
+client.focused_inactive #00000000 #00000000 #00000000
+client.unfocused #00000000 #00000000 #00000000
+
+default_border pixel 1
+
+gaps inner 1
+gaps outer 5
+
+focus_on_window_activation urgent
+
+exec wlsunset -l 48.8 -L 2.3 -T 5000 -t 4000
+exec swayidle
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+bindsym Mod4+SHIFT+R reload
+
+bindsym --no-repeat Mod4+space exec fuzzel
+bindsym --no-repeat Mod4+Q exec ~/.config/scripts/power-menu.sh
+
+bindsym --no-repeat Mod4+N exec foot
+
+bindsym Mod4+C kill
+
+bindsym Mod4+F fullscreen toggle
+bindsym Mod4+S layout toggle split
+
+bindsym Mod4+left focus left
+bindsym Mod4+right focus right
+bindsym Mod4+up focus up
+bindsym Mod4+down focus down
+
+bindsym Mod4+SHIFT+left move left
+bindsym Mod4+SHIFT+right move right
+bindsym Mod4+SHIFT+up move up
+bindsym Mod4+SHIFT+down move down
+
+bindsym Mod4+CTRL+left resize shrink width 10px
+bindsym Mod4+CTRL+right resize grow width 10px
+bindsym Mod4+CTRL+up resize grow height 10px
+bindsym Mod4+CTRL+down resize grow height 10px
+
+bindsym Mod4+A workspace 1
+bindsym Mod4+Z workspace 2
+bindsym Mod4+E workspace 3
+bindsym Mod4+R workspace 4
+bindsym Mod4+T workspace 5
+
+bindsym Mod4+ALT+A move container to workspace 1
+bindsym Mod4+ALT+Z move container to workspace 2
+bindsym Mod4+ALT+E move container to workspace 3
+bindsym Mod4+ALT+R move container to workspace 4
+bindsym Mod4+ALT+T move container to workspace 5
+
+bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-
+bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%+
+
+bindsym XF86MonBrightnessUp exec brightnessctl -q s +1%
+bindsym XF86MonBrightnessDown exec brightnessctl -q s 1%-
+
+bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+
+bindsym --no-repeat print exec grim -g "$(slurp)" $HOME/Pictures/$(date +"%s.png")
