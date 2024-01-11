@@ -102,3 +102,5 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 
 bindsym --no-repeat print exec grim -g "$(slurp)" $HOME/Pictures/$(date +"%s.png")
+
+include /etc/sway/config.d/*
