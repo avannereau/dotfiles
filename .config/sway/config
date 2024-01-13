@@ -80,7 +80,7 @@ bindsym Mod4+SHIFT+down move down
 bindsym Mod4+CTRL+left resize shrink width 10px
 bindsym Mod4+CTRL+right resize grow width 10px
 bindsym Mod4+CTRL+up resize grow height 10px
-bindsym Mod4+CTRL+down resize grow height 10px
+bindsym Mod4+CTRL+down resize shrink height 10px
 
 bindsym Mod4+A workspace 1
 bindsym Mod4+Z workspace 2
