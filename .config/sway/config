@@ -45,6 +45,7 @@ client.focused_inactive #00000000 #00000000 #00000000
 client.unfocused #00000000 #00000000 #00000000
 
 default_border pixel 1
+default_floating_border pixel 1
 
 gaps inner 1
 gaps outer 5
