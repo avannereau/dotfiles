@@ -17,7 +17,7 @@ Color scheme: **catppuccin-mocha**
 * polkit-gnome
 ---
 * brightnessctl
-* wlsunsetᵃᵘʳ
+* wlsunset
 * swayidle
 * grim
 * slurp
