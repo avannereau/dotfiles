@@ -14,7 +14,6 @@ Color scheme: **catppuccin-mocha**
 ---
 * xdg-desktop-portal-gtk
 * xdg-desktop-portal-wlr
-* libnotify
 ---
 * brightnessctl
 * playerctl
