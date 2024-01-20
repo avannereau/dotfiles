@@ -2,7 +2,7 @@
 
 send_notification() {
   brightness=$(brightnessctl -m | cut -d, -f4)
-  notify-send -t 1000 -h string:x-canonical-private-synchronous:brightness -h int:value:$brightness "Brightness: ${brightness}"
+  notify-send -t 1000 -h string:x-canonical-private-synchronous:brightness -h int:value:$brightness "󰃠 ${brightness}"
 }
 
 case $1 in
